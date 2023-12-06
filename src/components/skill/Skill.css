@@ -1,0 +1,68 @@
+.skill-icon {
+    background: bottom no-repeat;
+    display: block;
+    margin: 10 auto 7px;
+    height: 100px;
+}
+
+.deploy .skill-icon {
+    background-size: contain;
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-image: url(../../assets/images/skills/deploy.png);
+}
+
+.code .skill-icon {
+    background-size: contain;
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-image: url(../../assets/images/skills/code.png);
+}
+
+.manage .skill-icon {
+    background-size: contain;
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-image: url(../../assets/images/skills/manage.png);
+}
+
+
+
+.maintain .skill-icon {
+    background-size: contain;
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-image: url(../../assets/images/skills/maintain.png);
+}
+
+.skill-link {
+    color: #1d1d1f;
+    display: block;
+    padding: 0;
+    margin-top: 3px;
+    position: relative;
+    z-index: 1;
+}
+
+
+.skill-label {
+    font-size: 12px;
+    line-height: 1.3333733333;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    font-family: SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+    display: block;
+    margin: 0;
+}
+
+.design .skill-icon {
+    background-size: contain;
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-image: url(/Users/shivani/Desktop/cs-601/project/portfolio/src/assets/images/skills/design.png);
+}

@@ -4,6 +4,12 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Available Scripts
 
+### `npm install styled-components`
+### `npm i bootstrap@5.3.2`
+
+### `npm install react-ga`
+### `npm i lottie-react`
+
 In the project directory, you can run:
 
 ### `npm start`

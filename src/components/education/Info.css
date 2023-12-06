@@ -1,0 +1,15 @@
+.lhfw-1n {
+    line-height: 1;
+    font-weight: normal;
+}
+
+
+.description {
+    text-align: left;
+    width: 100%;
+    font-family: "Cormorant", serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: calc(1.5vmin + 1.75vmax);
+    margin-bottom: 5%;
+}

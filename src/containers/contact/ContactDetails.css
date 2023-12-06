@@ -1,0 +1,106 @@
+.form-group {
+    margin-bottom: 20px;
+}
+
+.contact-container {
+    width: 90vw;
+    height: 60vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: start;
+}
+
+hr {
+    width: 96%;               
+    background-color:#080802;
+    height: 1px;
+  }
+
+.contact-details-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 20%;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.contact-dt-em {
+    width: 25vw;
+    height: 15vh;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    align-items:start;
+
+}
+
+.contact-dt-em-sm {
+    width: 30vw;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content:left;
+    align-items:start;
+
+}
+
+
+.linkedIn {
+    width: 40px;
+    height: 40px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(../../assets/images/socialmedia/linkedin-icon.svg);
+}
+
+.facebook {
+    margin-left: 3px;
+    width: 40px;
+    height: 40px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(../../assets/images/socialmedia/facebook-icon.svg);
+}
+
+.instagram {
+    margin-left: 3px;
+    width: 40px;
+    height: 40px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(../../assets/images/socialmedia/instagram-icon.svg);
+}
+.contact-details-container > div{
+    font-size: 1.2cqmax;
+    margin: none;
+    padding:none;
+    height: 1.2cqmax;
+}
+
+
+.contact-title{
+    margin-bottom: none;
+    font-size: 1.3cqmax;
+    font-weight: bold;
+}
+
+.gmail {
+    margin-left: 3px;
+    margin-top: -3px;
+    width: 50px;
+    height: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(../../assets/images/socialmedia/gmail-icon.svg);
+}
+
+.git {
+    margin-left: 3px;
+    width: 40px;
+    height: 40px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(../../assets/images/socialmedia/github-icon.svg);
+}

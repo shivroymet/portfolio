@@ -1,0 +1,14 @@
+.navbar-div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.brand {
+    margin-left: 20px;
+}
+
+.active{
+    background-color: rgb(200, 200, 200);
+    border-radius: 10px;
+}

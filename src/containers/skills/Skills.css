@@ -1,0 +1,27 @@
+.skill-items {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.skill-wrapper {
+    display: flex;
+    margin: 50px;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+
+.skill-item {
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    margin: 0 -0.1176470588em;
+    padding: 0 30px;
+}

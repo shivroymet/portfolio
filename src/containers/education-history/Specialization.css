@@ -1,0 +1,114 @@
+:root {
+    --cards: 3;
+    --cardHeightPortrait: 37vh;
+    --cardHeightLandscape: 60vh;
+    --cardTopPadding: 10em;
+    --cardMargin: 4vw;
+}
+
+.container-div {
+    width: 60vw;
+}
+
+@media screen and (orientation: landscape) {
+    .container-div {
+        width: 30vw;
+    }
+
+    :root {
+        --cardHeight: var(--cardHeightLandscape);
+    }
+
+    .areas-of-special {
+        height: 250vh;
+    }
+
+
+}
+
+@media screen and (orientation: portrait) {
+    :root {
+        --cardHeight: var(--cardHeightPortrait);
+    }
+
+
+    .areas-of-special {
+        height: 200vh;
+    }
+
+    .container-div {
+        width: 60vw;
+    }
+
+}
+
+
+#cards-div {
+    list-style: none;
+    padding-left: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(var(--cards), var(--cardHeight));
+    gap: var(--cardMargin);
+    padding-bottom: calc(var(--cards) * var(--cardTopPadding));
+    margin-bottom: var(--cardMargin);
+}
+
+
+@media screen and (min-width:500px) {
+    .areas-of-special-title {
+        font-size: 2cqmax;
+    }
+
+    .areas-of-special-info>div {
+        font-size: 15px;
+    }
+}
+
+@media (max-width:500px) {
+    .areas-of-special-title {
+        font-size: 1.5cqmax;
+    }
+
+    .areas-of-special-info>div {
+        font-size: 10px;
+    }
+}
+
+.areas-of-special-title {
+    color: #575757;
+    font-family: 'San Francisco SB';
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.areas-of-special-info>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+
+
+.areas-of-special {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+
+}
+
+.areas-of-special-info {
+    align-self: self-start;
+    position: sticky;
+    top: 0;
+    display: flex;
+    height: 100vh;
+    width: 20%;
+    flex-direction: column;
+    justify-content: center;
+}

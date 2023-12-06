@@ -1,0 +1,40 @@
+.areas-of-special-more-container {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    background-color: white;
+}
+
+.areas-of-special {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+}
+
+@media screen and (orientation: landscape) {
+    .areas-of-special-more-container {
+        height: 60vh;
+    }
+}
+
+@media screen and (orientation: portrait) {
+    .areas-of-special-more-container {
+        height: 40vh;
+    }
+}
+
+.areas-of-special-more{
+    display: flex;
+    max-width: 700px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .areas-of-special-more h2{
+    font-size: 3cqmax;
+  }

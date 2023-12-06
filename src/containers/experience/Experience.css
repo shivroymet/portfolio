@@ -1,0 +1,568 @@
+/* .icon-box {
+  width: 50px;
+  height: 50px;
+  margin: 2.5px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+} */
+
+.icon-box:hover {
+  width: 70px;
+  height: 70px;
+}
+
+
+.img1 {
+  background-image: url(../../assets/images/tool/java.svg);
+}
+
+.img2 {
+  background-image: url(../../assets/images/tool/postgresql.svg);
+}
+
+.img3 {
+  background-image: url(../../assets/images/tool/angular.svg);
+}
+
+.img4 {
+  background-image: url(../../assets/images/tool/html5.svg);
+}
+
+.img5 {
+  background-image: url(../../assets/images/tool/css3.svg);
+}
+
+.img6 {
+  background-image: url(../../assets/images/tool/bootstrap.svg);
+}
+
+.img7 {
+  background-image: url(../../assets/images/tool/mongodb.svg);
+}
+
+.img8 {
+  background-image: url(../../assets/images/tool/eclipse.svg);
+}
+
+
+.img9 {
+  background-image: url(../../assets/images/tool/elastic.svg);
+}
+
+.img10 {
+  background-image: url(../../assets/images/tool/ansible.svg);
+}
+
+.img11 {
+  background-image: url(../../assets/images/tool/typescript.svg);
+}
+
+.img12 {
+  background-image: url(../../assets/images/tool/maven.svg);
+}
+
+.img13 {
+  background-image: url(../../assets/images/tool/cassandra.svg);
+}
+
+.img14 {
+  background-image: url(../../assets/images/tool/scala.svg);
+}
+
+.img15 {
+  background-image: url(../../assets/images/tool/datadog.svg);
+}
+
+.img16 {
+  background-image: url(../../assets/images/tool/jenkins.svg);
+}
+
+.img17 {
+  background-image: url(../../assets/images/tool/docker.svg);
+}
+
+.img18 {
+  background-image: url(../../assets/images/tool/github.svg);
+}
+
+.img19 {
+  background-image: url(../../assets/images/tool/splunk.svg);
+}
+
+.img20 {
+  background-image: url(../../assets/images/tool/gradle.svg);
+}
+
+.img21 {
+  background-image: url(../../assets/images/tool/postgresql.svg);
+}
+
+.img22 {
+  background-image: url(../../assets/images/tool/atlassian.svg);
+}
+
+.img23 {
+  background-image: url(../../assets/images/tool/aws.svg);
+}
+
+.img24 {
+  background-image: url(../../assets/images/tool/vscode.svg);
+}
+
+.img25 {
+  background-image: url(../../assets/images/tool/sonarqube.svg);
+}
+
+.img26 {
+  background-image: url(../../assets/images/tool/dynatrace.svg);
+}
+
+.img27 {
+  background-image: url(../../assets/images/tool/java.svg);
+}
+
+.img28 {
+  background-image: url(../../assets/images/tool/react.svg);
+}
+
+.img29 {
+  background-image: url(../../assets/images/tool/openshift.svg);
+}
+
+.infosys-fig {
+  background-image: url(../../assets/images/AdobeStock_516816028_Preview_Editorial_Use_Only.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  opacity: 1;
+}
+
+
+.accenture-fig {
+  background-image: url(../../assets/images/AdobeStock_480771170_Preview_Editorial_Use_Only.jpeg), url(../../assets/images/White.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: difference;
+  opacity: 1;
+
+}
+
+.accenture-fig::after {
+  background-image: url(../../assets/images/Accenture.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-color: white;
+
+}
+
+.infosys-fig::after {
+  background-image: url(../../assets/images/Infosys_logo\ copy.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-color: white;
+
+}
+
+body>article {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+
+/***********************************************************/
+
+@media screen and (min-width:800px) {
+  article>figure {
+    background: #eee;
+    width: calc(50% + 1px);
+    height: 50vh;
+    margin: 0 auto 10vh 0;
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    background-blend-mode: multiply;
+    /* Change blend mode as needed */
+    opacity: 1;
+    box-shadow: 4px -4px 8px rgba(0, 0, 0, .4);
+  }
+
+
+
+
+  article>figure::after {
+    content: '';
+    position: absolute;
+    top: 5vmin;
+    right: 5vmin;
+    bottom: 5vmin;
+    left: 45%;
+
+    outline-offset: -5vmin;
+    backdrop-filter: grayscale(1);
+    pointer-events: none;
+  }
+
+  article>figure:nth-of-type(2n+1)::after {
+    right: 45%;
+    left: 5vmin;
+  }
+
+  article>section:nth-of-type(2n+1) {
+    background: #e5e5e5;
+
+    width: 50%;
+    height: 50vh;
+    margin: 0 0 0vh auto;
+    position: sticky;
+    top: 0;
+
+    padding: 5vmin;
+    box-shadow: -4px -4px 8px rgba(0, 0, 0, .1);
+  }
+
+  article>section:nth-of-type(2n) {
+    background: #e5e5e5;
+
+    width: 100%;
+    height: 50vh;
+    margin: 0 0 0vh auto;
+    position: sticky;
+    top: 0;
+
+    padding: 5vmin;
+    box-shadow: -4px -4px 8px rgba(0, 0, 0, .1);
+  }
+
+
+
+  article>figure:nth-of-type(1),
+  article>section:nth-of-type(1) {
+    margin: 0 0 0vh 0;
+    width: 50%;
+  }
+
+  article>article>section:nth-of-type(3) {
+    margin: 0 0 0vh 0;
+    width: 50%;
+  }
+
+  article>figure:nth-of-type(2n+1) {
+    margin: 0 0 0vh auto;
+    box-shadow: -4px -4px 8px rgba(0, 0, 0, .1);
+  }
+
+
+  article>section:nth-of-type(3) {
+    margin: 0 0 0vh auto;
+    box-shadow: -4px -4px 8px rgba(0, 0, 0, .1);
+  }
+
+  article>figure:last-of-type,
+  article>section:last-of-type {
+    margin-bottom: 0;
+  }
+
+  article>section::before {
+    background: inherit;
+    z-index: 1;
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 7vmin;
+    height: 7vmin;
+    transform: translate(calc(-50% + 1px), -50%) rotate(-45deg);
+    clip-path: polygon(-15% -15%, 110% 0%, 0% 110%);
+    box-shadow: -4px -2px 8px rgba(0, 0, 0, .4);
+    border-radius: 1.5vmin 0 0 0;
+  }
+
+  article>section:nth-of-type(1)::before {
+    left: auto;
+    right: 0;
+    transform: translate(calc(50% - 1px), -50%) rotate(-45deg) scale(-1);
+  }
+
+  article>section:nth-of-type(3)::before {
+    left: 0;
+    right: auto;
+    transform: translate(calc(-50% + 1px), -50%) rotate(-45deg) scale(1);
+  }
+
+  article>section::after {
+    content: '';
+    position: absolute;
+
+    background-image: url(../../assets/images/Infosys_logo.svg);
+    background-repeat: no-repeat;
+
+    pointer-events: none;
+  }
+
+  article>section:nth-of-type(2n+1):after {
+    right: 5vmin;
+    left: 45%;
+
+  }
+
+  article>figure img {
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  article>section>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    padding: 1rem;
+  }
+
+  div>h1,
+  div>h2 {
+    font-size: calc(4vmin + 3vmax);
+    text-align: center;
+    font-weight: 500;
+    line-height: 1;
+    word-spacing: .5rem;
+
+  }
+
+}
+
+@media screen and (max-width:800px) {
+  article {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  article>figure {
+    margin: 20px;
+    width: 90vw;
+    height: 30vh;
+    border-radius: 10px;
+  }
+
+  .infy-div,
+  .acc-div {
+    /* margin-top: 30%; */
+    display: flex;
+    flex-direction: row;
+    width:80%;
+    border-radius: 10px;
+    height: 20vh;
+    margin: 50px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    /* background-color: white; */
+  }
+
+  .infy-tools,
+  .acc-tools {
+    padding: none;
+    display: flex;
+    /* margin-bottom: 20px; */
+    flex-direction: row;
+    /* margin: 20px; */
+    /* height:30vh; */
+    height: 100%;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+  }
+
+  .experience-section {
+    width: 90vw;
+    /* height: 0vh; */
+    background-color: white;
+  }
+
+}
+
+.experience-section {
+  /* height: 50vh; */
+  width: 90vw;
+  background-color: white;
+}
+
+
+
+
+.containerhel {
+  height: 50vw;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+.scaleDown {
+  width: 100vw;
+  height: 50vh;
+  animation: fadeInUp;
+  animation-duration: 5s;
+  background-color: black;
+}
+
+
+
+@media screen and (min-width: 800px) {
+  .icon-box {
+    width: 70px;
+    height: 70px;
+    margin: 3px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+  }
+
+  .icon-box:hover {
+    width: 80px;
+    height: 80px;
+
+  }
+
+}
+
+@media screen and (max-width: 800px) {
+  .icon-box {
+    width: 30px;
+    height: 30px;
+    margin: 2.5px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+  }
+
+  .icon-box:hover {
+    width: 35px;
+    height: 35px;
+
+  }
+}
+
+
+
+
+.intro-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #d7d7d7;
+}
+
+
+.section {
+  overflow: hidden;
+}
+
+section {
+  width: 100%;
+  display: flex;
+  align-content: space-around;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+}
+
+div {
+  display: block;
+}
+
+.large-6 {
+  flex-basis: 50%;
+  max-width: 50%;
+}
+
+
+
+
+
+.carousel-indicators button {
+  background-color: #999;
+  background-color: rgba(70, 70, 70, 0.25);
+
+}
+
+.carousel-indicators .active {
+  background-color: #444;
+}
+
+
+
+.carousel-div {
+  display: flex;
+  width: 90%;
+  height: 700px;
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+
+h2 {
+  font-size: 2.5em;
+}
+
+
+.infy-tools,
+.acc-tools {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 90%;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+/* .infy-div,
+.acc-div {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 40vh;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+} */
+
+
+
+p>span {
+  font-weight: bolder;
+}
+
+.container-ex{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  font-size:1.1cqmax;
+
+}
+
+.title-ex {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}

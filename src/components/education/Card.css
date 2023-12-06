@@ -1,0 +1,125 @@
+@media screen and (orientation: landscape) {
+
+    .area-image-special-first,
+    .area-image-special-second,
+    .area-image-special-third {
+        width: 27vw;
+    }
+}
+
+@media screen and (orientation: portrait) {
+
+    .area-image-special-first,
+    .area-image-special-second,
+    .area-image-special-third {
+        width: 60vw;
+    }
+}
+
+
+.areas-of-special-info {
+    align-self: self-start;
+    position: sticky;
+    top: 0;
+    display: flex;
+    height: 100vh;
+    width: 20%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.first-special-image,
+.second-special-image,
+.third-special-image {
+    height: 50%;
+    width: 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.first-special-image {
+    background-image: url(../../assets/images/cards/bug.svg);
+
+}
+
+.second-special-image {
+    background-image: url(../../assets/images/cards/develop.svg);
+
+}
+
+.third-special-image {
+    background-image: url(../../assets/images/cards/web-design.png);
+
+}
+
+.area-image-special-first::after {
+    content: 'Software Security and Maintainence';
+    font-family: 'San Francisco Regular';
+    font-size: 2cqmax;
+    text-align: center;
+}
+
+
+.area-image-special-first {
+    background-color: #7e7e7e;
+}
+
+
+.area-image-special-first,
+.area-image-special-second,
+.area-image-special-third {
+    border-radius: 10px;
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.1);
+    display: flex;
+    position: relative;
+    height: var(--cardHeight);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.area-image-special-second {
+    background-color: #adadad;
+}
+
+.area-image-special-third {
+    background-color: white;
+}
+
+
+
+#card1 {
+    --index: 1;
+}
+
+#card2 {
+    --index: 2;
+}
+
+#card3 {
+    --index: 3;
+}
+
+.card-list {
+    position: sticky;
+    top: 0;
+    padding-top: calc(var(--index) * var(--cardTopPadding));
+}
+
+
+.area-image-special-second::after {
+    content: 'Web App Development';
+    font-family: 'San Francisco Regular';
+    font-size: 2cqmax;
+    text-align: center;
+}
+
+.area-image-special-third::after {
+    content: 'Software Design';
+    font-family: 'San Francisco Regular';
+    font-size: 2cqmax;
+    text-align: center;
+}
