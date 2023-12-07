@@ -121,6 +121,7 @@
         align-items: center;
     }
 
+
     .full-name-desc {
         width: 100%;
         text-align: left;
@@ -189,6 +190,7 @@
 
     .full-name-contain {
         width: 80%;
+        white-space: normal;
     }
 
     .java,
@@ -382,6 +384,7 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
+        white-space: normal;
     }
     
     .full-name-desc {
@@ -520,6 +523,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    white-space: normal;
 }
 
 .project-slide {
@@ -623,6 +627,17 @@
     background-color: rgba(0, 0, 0, 0.6);
 }
 
+.details-container-git{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+
+.full-name-contain{
+    white-space: normal;
+word-break: break-word;
+}
 .slides {
     display: flex;
     max-width: 780px;

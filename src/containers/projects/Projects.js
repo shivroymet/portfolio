@@ -1,4 +1,5 @@
 import React, { useEffect, useState, useRef } from "react";
+import { GIT_TOKEN } from "../../constants/Constant";
 import "./Projects.css"
 
 export function Projects() {
@@ -9,11 +10,19 @@ export function Projects() {
     useEffect(() => {
         async function fetchData() {
             try {
-                const response = await fetch("https://api.github.com/users/shivroymet/repos");
+                var myHeaders = new Headers();
+                myHeaders.append("Authorization", "Basic "+ {GIT_TOKEN});
+
+                var requestOptions = {
+                    method: 'GET',
+                    headers: myHeaders,
+                    redirect: 'follow'
+                };
+                const response = (await fetch("https://api.github.com/users/shivroymet/repos",requestOptions));
                 const data = await response.json();
 
                 const projectDetails = await Promise.all(data.map(async (element) => {
-                    const languagesResponse = await fetch(element.languages_url);
+                    const languagesResponse = await fetch(element.languages_url,requestOptions);
                     const languagesData = await languagesResponse.json();
                     const forksResponse = await fetch(element.forks_url);
                     const forksData = await forksResponse.json();
@@ -43,7 +52,7 @@ export function Projects() {
 
         const carousel = document.querySelector(".slides");
 
-        let isDragStart = false, prevPageX, prevScrollLeft,posDiff;
+        let isDragStart = false, prevPageX, prevScrollLeft, posDiff;
         const dragStart = (e) => {
             isDragStart = true;
             prevPageX = e.pageX || e.touches[0].pageX;
@@ -61,7 +70,7 @@ export function Projects() {
             if (!isDragStart) return;
             e.preventDefault();
             carousel.classList.add("dragging")
-    
+
             posDiff = (e.pageX || e.touches[0].pageX) - prevPageX
             carousel.scrollLeft = prevScrollLeft - posDiff;
         }
@@ -73,14 +82,14 @@ export function Projects() {
         carousel.addEventListener("mouseleave", dragStop)
         carousel.addEventListener("touchend", dragStop)
 
-    },[])
+    }, [])
 
     const showHidden = (carouselRef) => {
         let scrollWidth = carouselRef.current.scrollWidth - carouselRef.current.clientWidth;
 
         carouselRef.current.querySelectorAll("i")[0].style.display = carouselRef.current.scrollLeft === 0 ? "none" : "block";
 
-        carouselRef.current.querySelectorAll("i")[1].style.display =  carouselRef.current.scrollLeft === scrollWidth ? "none": "block";
+        carouselRef.current.querySelectorAll("i")[1].style.display = carouselRef.current.scrollLeft === scrollWidth ? "none" : "block";
         // 
     }
 
@@ -131,7 +140,7 @@ export function Projects() {
                         </>
                     )}
                 </>
-            <i id="right" className="fa-solid fa-angle-right" onClick={() => handleScroll('right')}></i>
+                <i id="right" className="fa-solid fa-angle-right" onClick={() => handleScroll('right')}></i>
             </div>
 
         </div>

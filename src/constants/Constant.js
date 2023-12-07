@@ -25,3 +25,4 @@ export const SERVICE_ID = "portfolio_contact";
 export const TEMPLATE_ID = 'portfolio-template';
 export const USER_ID = 'FP63d5ww5ixQOzPt_';
 export const GOOGLE_MAP_API_KEY= "AIzaSyALC8wwgPSRQrAMg79jJM8HC3MsLTfyx2U";
+export const GIT_TOKEN = "c2hpdnJveW1ldDpnaHBfcUN3bjFJOEFJWVVUZW9JSmg1eHQ1dXRjdTVnSDlsMjNRZm5a";
