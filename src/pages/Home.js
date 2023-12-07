@@ -6,8 +6,8 @@ import { EducationHistory } from "../containers/education-history/EducationHisto
 import { Specialization } from "../containers/education-history/Specialization";
 import { Special } from "../containers/education-history/Special";
 import { Experience } from "../containers/experience/Experience";
-import { ProjectCard } from "../components/projects/ProjectCard";
 import "./Home.css"
+import { Projects } from "../containers/projects/Projects";
 
 export function Home() {
     return <>
@@ -18,9 +18,17 @@ export function Home() {
         <Specialization />
         <Special />
 
+        <div className="bg-dark experience-intro"> 
+        <h2>PAST EXERIENCES</h2>
+        
+        </div>
+
 
         <Experience />
-        <ProjectCard/>
+        <div className="project-intro"> 
+        <div class="h1">Some Top Projects</div>
+        <Projects/>
+        </div>
 
 
         <Achievements></Achievements>

@@ -1,0 +1,418 @@
+.project-slide, .slides {
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+}
+
+.wrapper1{
+    display: flex;
+    width: 90vw;
+    height: 40vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+
+.project-slide i {
+    position: absolute;
+
+}
+
+
+.slides.dragging{
+    scroll-behavior: auto;
+}
+
+.slides.dragging .scroll-item{
+    pointer-events: none;
+}
+/* 
+.project-slide{
+    max-width: 760px;
+    display: flex;
+}
+.slides {
+    display: flex;
+    max-width: 760px;
+    margin: 10px;
+} */
+
+@media screen and (min-width:780px) {
+    .project-slide{
+        max-width: 750px;
+        display: flex;
+    }
+    .slides {
+        display: flex;
+        max-width: 760px;
+        /* min-width: 300px; */
+        margin: 5px;
+    }
+    .slide-item {
+        margin: 9px;
+    }
+    
+}
+
+@media screen and (max-width:780px) and (min-width:300px) {
+    .project-slide{
+        max-width: 350px;
+        margin: 5px;
+    }
+    .slides {
+        display: flex;
+        max-width: 390px;
+        /* min-width: 300px; */
+        margin: 4px;
+    }
+
+    .slide-item {
+        margin: 5px;
+    }
+    .container-slide {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: white;
+        max-width: 260px;
+        max-height: 140px;
+        border-radius: 30px;
+        box-shadow: 1px 0px 5px rgb(129, 127, 127);
+        ;
+    
+        margin: 5px;
+        padding: 5px;
+        
+    }
+
+    .slide-item {
+        margin: 5px;
+    }
+}
+
+@media screen and (max-width:300px) {
+    .project-slide{
+        max-width: 280px;
+        margin: 10px;
+    }
+    .slides {
+        display: flex;
+        max-width: 300px;
+        /* min-width: 300px; */
+        margin: 1px;
+    }
+
+    .slide-item {
+        margin: 5px;
+    }
+    .container-slide {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: white;
+        max-width: 300px;
+        max-height: 150px;
+        border-radius: 20px;
+        box-shadow: 1px 0px 5px rgb(129, 127, 127);
+        ;
+    
+        margin: 5px;
+        padding: 10px;
+        
+    }
+}
+
+
+
+
+
+.project-slide i {
+    background-color: #007bff;
+    height: 30px;
+    width: 30px;
+    color: white;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    
+}
+
+
+
+
+.slides i:first-child {
+    position:absolute;
+    left: 23px;
+    transform: translateY(120px);
+    display: none;
+}
+
+.slides i:last-child {
+    right: 50px;
+    transform: translateY(120px);
+}
+
+
+
+
+
+@media screen and (max-width:300px) {
+    
+
+    .git-icon {
+        width: 25px;
+        height: 25px;
+        margin-right: 10px;
+        background-image: url(../../assets/images/github-svgrepo-com.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .name-container {
+        width: 100%;
+        min-height: 80px;
+        font-size: x-small;
+        font-weight: bolder;
+        font-family: Arial, Helvetica, sans-serif;
+        align-items: center;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .full-name-desc{
+        /* justify-self: flex-end; */
+        width: 100%;
+        text-align: left;
+        /* margin-top: 10px; */
+        /* margin-top: 10px; */
+        font-size: xx-small;
+        font-weight: normal;
+    }
+
+    .stars{
+        justify-content: end;
+        font-size: small;
+        font-weight: bolder ;
+    }
+    .star-icon{
+        min-width: 15px;
+        min-height: 15px;
+        max-width: 20px;
+        max-height: 20px;
+        margin: 5px;
+        /* border-radius: 20px; */
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-image: url(../../assets/images/star-svgrepo-com\ \(2\).svg);
+    
+    }
+    .fork-icon{
+        min-width: 16px;
+        min-height: 16px;
+        max-width: 20px;
+        max-height: 20px;
+        margin: 5px;top:5px;
+    
+        background-position: center;
+        /* border-radius: 20px; */
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-image: url(../../assets/images/git-fork-svgrepo-com.svg)
+        /* border: 1px black; */
+        /* background-color: rgb(171, 181, 181); */
+    
+    
+    }
+
+    .languages,.stars{
+        width: 100px;
+        height: 45px;
+        margin: 4px;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        flex-wrap: wrap-reverse;
+        justify-content: flex-start;
+        /* background-color: aqua; */
+    
+    }
+
+    
+    
+}
+
+@media screen and (min-width:300px) {
+
+    .container-slide {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: white;
+        max-width: 350px;
+        max-height: 250px;
+        border-radius: 30px;
+        box-shadow: 1px 0px 5px rgb(129, 127, 127);
+        ;
+    
+        margin: 20px;
+        padding: 10px;
+        
+    }
+    .git-icon {
+        width: 50px;
+        height: 50px;
+        margin-right: 10px;
+        background-image: url(../../assets/images/github-svgrepo-com.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .name-container {
+        width: 100%;
+        min-height: 120px;
+        font-size: large;
+        font-weight: bolder;
+        font-family: Arial, Helvetica, sans-serif;
+        align-items: center;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .full-name-desc{
+        /* justify-self: flex-end; */
+        width: 100%;
+        text-align: left;
+        /* margin-top: 10px; */
+        /* margin-top: 10px; */
+        font-size: small;
+        font-weight: normal;
+    }
+
+    .stars{
+        justify-content: end;
+        font-size: larger;
+        font-weight: bolder ;
+    }
+    .star-icon{
+        min-width: 20px;
+        min-height: 20px;
+        max-width: 30px;
+        max-height: 30px;
+        margin: 5px;
+        /* border-radius: 20px; */
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-image: url(../../assets/images/star-svgrepo-com\ \(2\).svg);
+    
+    }
+    .fork-icon{
+        min-width: 22px;
+        min-height: 22px;
+        max-width: 30px;
+        max-height: 35px;
+        margin: 5px;top:5px;
+    
+        background-position: center;
+        /* border-radius: 20px; */
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-image: url(../../assets/images/git-fork-svgrepo-com.svg)
+        /* border: 1px black; */
+        /* background-color: rgb(171, 181, 181); */
+    
+    
+    }
+
+    .languages,.stars{
+        width: 150px;
+        height: 100px;
+        margin: 10px;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        flex-wrap: wrap-reverse;
+        justify-content: flex-start;
+        /* background-color: aqua; */
+    
+    }
+
+}
+
+
+.slide-item {
+    white-space:wrap;
+}
+
+.slides{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+
+
+.details-container-git{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.git-icon-contain,.full-name-contain{
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-items: flex-start;
+    align-self: flex-start;
+    
+    align-items:flex-start;
+}
+
+.full-name-contain{
+    width: 80%;
+
+}
+
+
+
+.language-1,
+.language-2,
+.language-3,
+.language-4 {
+    min-height: 30px;
+    min-width: 30px;
+    max-width: 40px;
+    max-height: 40px;
+    margin: 5px;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+
+.language-1 {
+    background-image: url(../../assets/images/java-icon.svg);
+}
+
+.language-2 {
+    background-image: url(../../assets/images/html-5-icon.svg);
+}
+
+.language-3 {
+    background-image: url(../../assets/images/docker-icon.svg);
+}
+
+.language-4 {
+    background-image: url(../../assets/images/typescript-icon.svg);
+}
+
+
+
+
+
+.details-container-git {
+    display: flex;
+    flex-direction: row;
+}

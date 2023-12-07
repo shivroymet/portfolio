@@ -1,0 +1,21 @@
+.experience-intro{
+    width: 100vw;
+    height: 40vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-intro{
+    width: 90vw;
+    height: 40vh;
+    background-color: rgba(89, 86, 86, 0.6);
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    border-radius: 10px;
+}
