@@ -1,4 +1,6 @@
 
+import React  from 'react';
+import "./AboutMe.css"
 export function AboutMe() {
     return <div className="col-md-10">
         <div className="p-5 mb-4 bg-body-tertiary rounded-3">
@@ -12,7 +14,7 @@ export function AboutMe() {
 
                 <p className="col-md-8 fs-4"> Let's innovate, collaborate, and create the future of technology together.</p>
                 <a className="btn btn-primary btn-lg" type="button" href="/contact">Contact Me</a><span> </span>
-                <a className="btn btn-primary btn-lg" id="resume" href="/Users/shivani/Desktop/cs-601/project/portfolio/src/assets/files/Shivani_Resume_CW_Rel.pdf" download="Shivani_Resume_CW_Rel.pdf">Resume</a>
+                <a className="btn btn-primary btn-lg" id="resume" type="button" href="/Users/shivani/Desktop/cs-601/project/portfolio/src/assets/files/Shivani_Resume_CW_Rel.pdf" download="Shivani_Resume_CW_Rel.pdf">Resume</a>
             </div>
         </div>
     </div>

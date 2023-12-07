@@ -1,3 +1,4 @@
+import React  from 'react';
 import "./Skill.css"
 
 export function Skill({name}){

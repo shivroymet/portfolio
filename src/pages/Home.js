@@ -1,3 +1,4 @@
+import React from 'react';
 import { Intro } from "../containers/intro/Intro";
 import Achievements from "../components/experience/Achievments";
 import { AboutMe } from "../containers/about/AboutMe";
@@ -18,17 +19,17 @@ export function Home() {
         <Specialization />
         <Special />
 
-        <div className="bg-dark experience-intro"> 
-        <h2>PAST EXERIENCES</h2>
-        
+        <div className="bg-dark experience-intro">
+            <h2>PAST EXERIENCES</h2>
+
         </div>
 
 
         <Experience />
-        <div className="project-intro"> 
-        <div class="h1">Some Top Projects</div>
-        <Projects/>
+        <div className="project-intro">
+            <div className="h1">Some Top Projects</div>
         </div>
+            <Projects />
 
 
         <Achievements></Achievements>

@@ -1,3 +1,4 @@
+import React  from 'react';
 import "./Achievments.css"
 
 export default function Achievements() {

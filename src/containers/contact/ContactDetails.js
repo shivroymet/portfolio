@@ -1,3 +1,4 @@
+import React  from 'react';
 import "./ContactDetails.css"
 import { Map } from "../../components/utils/Map"
 

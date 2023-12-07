@@ -1,3 +1,4 @@
+import React  from 'react';
 import './Intro.css'
 export function Intro() {
   return <div className="text-center bg-light intro-content">

@@ -31,7 +31,6 @@ export function Projects() {
 
                 setProjects(projectDetails);
                 setIsLoading(false);
-                console.log(projectDetails);
             } catch (error) {
                 setIsLoading(true);
                 console.error('Error fetching projects:', error);
@@ -79,16 +78,16 @@ export function Projects() {
     const showHidden = (carouselRef) => {
         let scrollWidth = carouselRef.current.scrollWidth - carouselRef.current.clientWidth;
 
-        carouselRef.current.querySelectorAll("i")[0].style.display = carouselRef.current.scrollLeft == 0 ? "none" : "block";
+        carouselRef.current.querySelectorAll("i")[0].style.display = carouselRef.current.scrollLeft === 0 ? "none" : "block";
 
-        carouselRef.current.querySelectorAll("i")[1].style.display =  carouselRef.current.scrollLeft == scrollWidth ? "none": "block";
+        carouselRef.current.querySelectorAll("i")[1].style.display =  carouselRef.current.scrollLeft === scrollWidth ? "none": "block";
         // 
     }
 
     const handleScroll = (direction) => {
         if (carouselRef.current) {
             const projectTile = carouselRef.current.querySelectorAll(".slide-item");
-            let tileWidth = projectTile[0].clientWidth + 20;
+            let tileWidth = projectTile[0].clientWidth + 30;
             carouselRef.current.scrollLeft += direction === 'left' ? -tileWidth : tileWidth;
             setTimeout(() => showHidden(carouselRef), 60);
         }
@@ -116,7 +115,7 @@ export function Projects() {
                                     <div className="details-container-git">
                                         <div className="languages">
                                             {item.languages.map((content, idx) => (
-                                                <div key={idx} className="language-1">
+                                                <div key={idx} className={content.toLowerCase()}>
                                                 </div>
                                             ))}
                                         </div>

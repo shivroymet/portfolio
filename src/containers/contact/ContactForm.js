@@ -1,3 +1,4 @@
+import React  from 'react';
 import emailjs from 'emailjs-com';
 import './ContactForm.css'
 import { DICT_CLASSNAME as dict, SERVICE_ID, TEMPLATE_ID, USER_ID} from '../../constants/Constant';
@@ -38,19 +39,19 @@ export function ContactForm(){
     <h3>For any enquiries, get in touch:</h3>
     <form id="contactForm" onSubmit={handleOnSubmit}>
       <div className="form-group">
-        <label for="name" className="fw-bold">Name</label>
+        <label htmlFor="name" className="fw-bold">Name</label>
         <input type="text" className="form-control" id="name" name="name" required/>
       </div>
       <div className="form-group">
-        <label for="email" className="fw-bold">Email</label>
+        <label htmlFor="email" className="fw-bold">Email</label>
         <input type="email" className="form-control" id="email" name="email" required/>
       </div>
       <div className="form-group">
-        <label for="subject" className="fw-bold">Subject</label>
+        <label htmlFor="subject" className="fw-bold">Subject</label>
         <input type="text" className="form-control" id="subject" name="subject" required/>
       </div>
       <div className="form-group">
-        <label for="message" className="fw-bold">Message</label>
+        <label htmlFor="message" className="fw-bold">Message</label>
         <textarea className="form-control" id="message" name="message" rows="5" required></textarea>
       </div>
       <button type="submit" className="btn btn-primary">Submit</button>

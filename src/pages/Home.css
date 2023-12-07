@@ -9,9 +9,9 @@
 
 .project-intro{
     width: 90vw;
-    height: 40vh;
-    background-color: rgba(89, 86, 86, 0.6);
-    color: white;
+    height: 20vh;
+    /* background-color: rgba(89, 86, 86, 0.6); */
+    color: rgb(98, 97, 97);
     display: flex;
     justify-content: center;
     flex-direction: column;

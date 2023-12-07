@@ -1,266 +1,105 @@
-.project-slide, .slides {
+.project-slide,
+.slides {
     cursor: pointer;
     overflow: hidden;
     white-space: nowrap;
     scroll-behavior: smooth;
 }
 
-.wrapper1{
-    display: flex;
-    width: 90vw;
-    height: 40vh;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.6);
+@media screen and (min-width:850px) and (min-width:780) {
+    .slides i:first-child {
+        position: absolute;
+        transform: translateY(130px);
+        display: none;
+        left: 25px;
+    }
+
+    .slides i:last-child {
+        right: 40px;
+        transform: translateY(130px);
+        position: absolute;
+    }
+
+    .container-slide {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: white;
+        max-width: 359px;
+        max-height: 270px;
+        border-radius: 30px;
+        box-shadow: 1px 0px 5px rgb(129, 127, 127);
+        margin: 17px;
+        padding: 10px;
+    }
+
+    .project-slide {
+        max-width: 830px;
+        display: flex;
+    }
 }
-
-
-.project-slide i {
-    position: absolute;
-
-}
-
-
-.slides.dragging{
-    scroll-behavior: auto;
-}
-
-.slides.dragging .scroll-item{
-    pointer-events: none;
-}
-/* 
-.project-slide{
-    max-width: 760px;
-    display: flex;
-}
-.slides {
-    display: flex;
-    max-width: 760px;
-    margin: 10px;
-} */
 
 @media screen and (min-width:780px) {
-    .project-slide{
-        max-width: 750px;
-        display: flex;
-    }
-    .slides {
-        display: flex;
-        max-width: 760px;
-        /* min-width: 300px; */
-        margin: 5px;
-    }
-    .slide-item {
-        margin: 9px;
-    }
-    
-}
-
-@media screen and (max-width:780px) and (min-width:300px) {
-    .project-slide{
-        max-width: 350px;
-        margin: 5px;
-    }
-    .slides {
-        display: flex;
-        max-width: 390px;
-        /* min-width: 300px; */
-        margin: 4px;
+    .slides i:first-child {
+        position: absolute;
+        transform: translateY(130px);
+        display: none;
+        left: 25px;
     }
 
-    .slide-item {
-        margin: 5px;
+    .slides i:last-child {
+        right: 40px;
+        transform: translateY(130px);
+        position: absolute;
     }
+
     .container-slide {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         background-color: white;
-        max-width: 260px;
-        max-height: 140px;
+        max-width: 359px;
+        max-height: 270px;
         border-radius: 30px;
         box-shadow: 1px 0px 5px rgb(129, 127, 127);
-        ;
-    
-        margin: 5px;
-        padding: 5px;
-        
+        margin: 17px;
+        padding: 10px;
     }
 
-    .slide-item {
-        margin: 5px;
+    .project-slide {
+        max-width: 830px;
+        display: flex;
     }
-}
 
-@media screen and (max-width:300px) {
-    .project-slide{
-        max-width: 280px;
-        margin: 10px;
+    .wrapper1 {
+        display: flex;
+        width: 90vw;
+        height: 40vh;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.6);
     }
+
     .slides {
         display: flex;
-        max-width: 300px;
-        /* min-width: 300px; */
-        margin: 1px;
+        max-width: 780px;
     }
 
     .slide-item {
-        margin: 5px;
-    }
-    .container-slide {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        background-color: white;
-        max-width: 300px;
-        max-height: 150px;
-        border-radius: 20px;
-        box-shadow: 1px 0px 5px rgb(129, 127, 127);
-        ;
-    
-        margin: 5px;
-        padding: 10px;
-        
-    }
-}
-
-
-
-
-
-.project-slide i {
-    background-color: #007bff;
-    height: 30px;
-    width: 30px;
-    color: white;
-    text-align: center;
-    line-height: 30px;
-    border-radius: 50%;
-    
-}
-
-
-
-
-.slides i:first-child {
-    position:absolute;
-    left: 23px;
-    transform: translateY(120px);
-    display: none;
-}
-
-.slides i:last-child {
-    right: 50px;
-    transform: translateY(120px);
-}
-
-
-
-
-
-@media screen and (max-width:300px) {
-    
-
-    .git-icon {
-        width: 25px;
-        height: 25px;
-        margin-right: 10px;
-        background-image: url(../../assets/images/github-svgrepo-com.svg);
-        background-size: contain;
-        background-repeat: no-repeat;
-    }
-    .name-container {
-        width: 100%;
-        min-height: 80px;
-        font-size: x-small;
-        font-weight: bolder;
-        font-family: Arial, Helvetica, sans-serif;
-        align-items: center;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
+        white-space: wrap;
     }
 
-    .full-name-desc{
-        /* justify-self: flex-end; */
-        width: 100%;
-        text-align: left;
-        /* margin-top: 10px; */
-        /* margin-top: 10px; */
-        font-size: xx-small;
-        font-weight: normal;
+    .project-slide i {
+        background-color: #007bff;
+        height: 30px;
+        width: 30px;
+        color: white;
+        text-align: center;
+        line-height: 30px;
+        border-radius: 50%;
     }
 
-    .stars{
-        justify-content: end;
-        font-size: small;
-        font-weight: bolder ;
-    }
-    .star-icon{
-        min-width: 15px;
-        min-height: 15px;
-        max-width: 20px;
-        max-height: 20px;
-        margin: 5px;
-        /* border-radius: 20px; */
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-image: url(../../assets/images/star-svgrepo-com\ \(2\).svg);
-    
-    }
-    .fork-icon{
-        min-width: 16px;
-        min-height: 16px;
-        max-width: 20px;
-        max-height: 20px;
-        margin: 5px;top:5px;
-    
-        background-position: center;
-        /* border-radius: 20px; */
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-image: url(../../assets/images/git-fork-svgrepo-com.svg)
-        /* border: 1px black; */
-        /* background-color: rgb(171, 181, 181); */
-    
-    
-    }
-
-    .languages,.stars{
-        width: 100px;
-        height: 45px;
-        margin: 4px;
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-        flex-wrap: wrap-reverse;
-        justify-content: flex-start;
-        /* background-color: aqua; */
-    
-    }
-
-    
-    
-}
-
-@media screen and (min-width:300px) {
-
-    .container-slide {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        background-color: white;
-        max-width: 350px;
-        max-height: 250px;
-        border-radius: 30px;
-        box-shadow: 1px 0px 5px rgb(129, 127, 127);
-        ;
-    
-        margin: 20px;
-        padding: 10px;
-        
-    }
     .git-icon {
         width: 50px;
         height: 50px;
@@ -269,6 +108,7 @@
         background-size: contain;
         background-repeat: no-repeat;
     }
+
     .name-container {
         width: 100%;
         min-height: 120px;
@@ -281,52 +121,45 @@
         align-items: center;
     }
 
-    .full-name-desc{
-        /* justify-self: flex-end; */
+    .full-name-desc {
         width: 100%;
         text-align: left;
-        /* margin-top: 10px; */
-        /* margin-top: 10px; */
         font-size: small;
         font-weight: normal;
     }
 
-    .stars{
+    .stars {
         justify-content: end;
         font-size: larger;
-        font-weight: bolder ;
+        font-weight: bolder;
     }
-    .star-icon{
+
+    .star-icon {
         min-width: 20px;
         min-height: 20px;
         max-width: 30px;
         max-height: 30px;
         margin: 5px;
-        /* border-radius: 20px; */
         background-repeat: no-repeat;
         background-size: contain;
-        background-image: url(../../assets/images/star-svgrepo-com\ \(2\).svg);
-    
+        background-image: url(../../assets/images/star-svgrepo-com2.svg);
     }
-    .fork-icon{
+
+    .fork-icon {
         min-width: 22px;
         min-height: 22px;
         max-width: 30px;
         max-height: 35px;
-        margin: 5px;top:5px;
-    
+        margin: 5px;
+        top: 5px;
         background-position: center;
-        /* border-radius: 20px; */
         background-repeat: no-repeat;
         background-size: contain;
         background-image: url(../../assets/images/git-fork-svgrepo-com.svg)
-        /* border: 1px black; */
-        /* background-color: rgb(171, 181, 181); */
-    
-    
     }
 
-    .languages,.stars{
+    .languages,
+    .stars {
         width: 150px;
         height: 100px;
         margin: 10px;
@@ -335,52 +168,579 @@
         align-items: flex-start;
         flex-wrap: wrap-reverse;
         justify-content: flex-start;
-        /* background-color: aqua; */
-    
     }
 
+    .slides {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+    }
+
+    .git-icon-contain,
+    .full-name-contain {
+        min-height: 100px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-items: flex-start;
+        align-self: flex-start;
+        align-items: flex-start;
+    }
+
+    .full-name-contain {
+        width: 80%;
+    }
+
+    .java,
+    .html,
+    .shell,
+    .vue,
+    .typescript,
+    .css,
+    .javascript,
+    .dockerfile {
+        min-height: 30px;
+        min-width: 30px;
+        max-width: 40px;
+        max-height: 40px;
+        margin: 5px;
+        border-radius: 20px;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
 }
 
+
+
+@media screen and (max-width:200px) and (min-width:770px) {
+    .slides i:first-child {
+        position: absolute;
+        transform: translateY(130px);
+        display: none;
+        left: 10px;
+    }
+
+    .slides i:last-child {
+        right: 1px;
+        transform: translateY(130px);
+        position: absolute;
+    }
+
+    .container-slide {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: white;
+        max-width: 359px;
+        max-height: 270px;
+        border-radius: 30px;
+        box-shadow: 1px 0px 5px rgb(129, 127, 127);
+        margin: 11px;
+        padding: 10px;
+    }
+
+    .project-slide {
+        max-width: 750px;
+        display: flex;
+    }
+}
+
+/* @media screen and (max-width:600) {
+    .container-slide {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: white;
+        max-width: 300px;
+        max-height: 250px;
+        border-radius: 30px;
+        box-shadow: 1px 0px 5px rgb(129, 127, 127);
+        margin: 11px;
+        padding: 10px;
+    }
+    
+} */
+
+@media screen and (min-width:600px) and (max-width:780px) {
+
+    .slides i:first-child {
+        position: absolute;
+        transform: translateY(130px);
+        display: none;
+        left: 10px;
+    }
+    
+    .slides i:last-child {
+        right: 1px;
+        transform: translateY(130px);
+        position: absolute;
+    }
+    
+    .project-slide {
+        max-width: 635px;
+        display: flex;
+    }
+    
+    .container-slide {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: white;
+        max-width: 300px;
+        max-height: 250px;
+        border-radius: 30px;
+        box-shadow: 1px 0px 5px rgb(129, 127, 127);
+        margin: 11px;
+        padding: 10px;
+    }
+    
+    
+    
+}
+
+@media screen and (max-width:600px) and (min-width:415px) {
+
+    .slides i:first-child {
+        position: absolute;
+        transform: translateY(130px);
+        display: none;
+        left: 10px;
+    }
+    
+    .slides i:last-child {
+        right: 1px;
+        transform: translateY(130px);
+        position: absolute;
+    }
+    
+    .project-slide {
+        max-width: 315px;
+        display: flex;
+    }
+    
+    .container-slide {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: white;
+        max-width: 300px;
+        max-height: 250px;
+        border-radius: 30px;
+        box-shadow: 1px 0px 5px rgb(129, 127, 127);
+        margin: 14px;
+        padding: 10px;
+    }
+    
+}
+
+@media screen and (min-width:415px){
+    .wrapper1 {
+        display: flex;
+        width: 90vw;
+        height: 40vh;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+    
+    .slides {
+        display: flex;
+        max-width: 780px;
+    }
+    
+    .slide-item {
+        white-space: wrap;
+    }
+    
+    .project-slide i {
+        background-color: #007bff;
+        height: 30px;
+        width: 30px;
+        color: white;
+        text-align: center;
+        line-height: 30px;
+        border-radius: 50%;
+    }
+    
+    .git-icon {
+        width: 50px;
+        height: 50px;
+        margin-right: 10px;
+        background-image: url(../../assets/images/github-svgrepo-com.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    
+    .name-container {
+        width: 100%;
+        min-height: 120px;
+        font-size: large;
+        font-weight: bolder;
+        font-family: Arial, Helvetica, sans-serif;
+        align-items: center;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .full-name-desc {
+        width: 100%;
+        text-align: left;
+        font-size: small;
+        font-weight: normal;
+    }
+    
+    .stars {
+        justify-content: end;
+        font-size: larger;
+        font-weight: bolder;
+    }
+    
+    .star-icon {
+        min-width: 20px;
+        min-height: 20px;
+        max-width: 30px;
+        max-height: 30px;
+        margin: 5px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-image: url(../../assets/images/star-svgrepo-com2.svg);
+    }
+    
+    .fork-icon {
+        min-width: 22px;
+        min-height: 22px;
+        max-width: 30px;
+        max-height: 35px;
+        margin: 5px;
+        top: 5px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-image: url(../../assets/images/git-fork-svgrepo-com.svg)
+    }
+    
+    .languages,
+    .stars {
+        width: 150px;
+        height: 100px;
+        margin: 10px;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        flex-wrap: wrap-reverse;
+        justify-content: flex-start;
+    }
+    
+    .slides {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+    }
+    
+    .git-icon-contain,
+    .full-name-contain {
+        min-height: 100px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-items: flex-start;
+        align-self: flex-start;
+        align-items: flex-start;
+    }
+    
+    .full-name-contain {
+        width: 80%;
+    }
+    
+    .java,
+    .html,
+    .shell,
+    .vue,
+    .typescript,
+    .css,
+    .javascript,
+    .dockerfile {
+        min-height: 30px;
+        min-width: 30px;
+        max-width: 40px;
+        max-height: 40px;
+        margin: 5px;
+        border-radius: 20px;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+}
+
+
+@media screen and (max-width:415px) {
+
+    
+
+
+.project-slide {
+    max-width: 635px;
+    display: flex;
+}
+
+
+.container-slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    max-width: 300px;
+    max-height: 250px;
+    border-radius: 30px;
+    box-shadow: 1px 0px 5px rgb(129, 127, 127);
+    margin: 11px;
+    padding: 10px;
+}
+
+
+
+
+
+.full-name-desc {
+    width: 100%;
+    text-align: left;
+    font-size: x-small;
+    font-weight: normal;
+}
+
+
+.name-container {
+    width: 100%;
+    min-height: 70px;
+    font-size: small;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.project-slide {
+    max-width: 250px;
+    display: flex;
+}
+
+.git-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    background-image: url(http://localhost:3000/static/media/github-svgrepo-com.d1f46a2f6dd23f370ade.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+.container-slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    max-width: 224px;
+    max-height: 204px;
+    border-radius: 30px;
+    box-shadow: 1px 0px 5px rgb(129, 127, 127);
+    margin: 14px;
+    padding: 10px;
+}
+
+.star-icon {
+    min-width: 16px;
+    min-height: 16px;
+    max-width: 20px;
+    max-height: 20px;
+    margin: 5px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(http://localhost:3000/static/media/star-svgrepo-com2.3df90966eb49d609d191.svg);
+}
+
+
+.fork-icon {
+    min-width: 20px;
+    min-height: 18px;
+    max-width: 22px;
+    max-height: 23px;
+    margin: 5px;
+    top: 5px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(http://localhost:3000/static/media/git-fork-svgrepo-com.854051257ddfbdd986fb.svg);
+}
+
+.slides i:first-child {
+    position: absolute;
+    transform: translateY(110px);
+    display: none;
+    left: 8px;
+}
+
+.project-slide i {
+    background-color: #007bff;
+    height: 20px;
+    width: 20px;
+    color: white;
+    text-align: center;
+    line-height: 20px;
+    border-radius: 50%;
+}
+
+
+.slides i:last-child {
+    right: 0px;
+    transform: translateY(110px);
+    position: absolute;
+}
+
+
+.languages, .stars {
+    width: 135px;
+    height: 106px;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap-reverse;
+    justify-content: flex-start;
+    font-size: medium;
+    align-content: flex-start;
+}
+
+.wrapper1 {
+    display: flex;
+    width: 90vw;
+    height: 40vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.slides {
+    display: flex;
+    max-width: 780px;
+}
 
 .slide-item {
-    white-space:wrap;
+    white-space: wrap;
 }
 
-.slides{
+.project-slide i {
+    background-color: #007bff;
+    height: 30px;
+    width: 30px;
+    color: white;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+}
+
+.git-icon {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    background-image: url(../../assets/images/github-svgrepo-com.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.name-container {
+    width: 100%;
+    min-height: 120px;
+    font-size: large;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.full-name-desc {
+    width: 100%;
+    text-align: left;
+    font-size: small;
+    font-weight: normal;
+}
+
+.stars {
+    justify-content: end;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.star-icon {
+    min-width: 20px;
+    min-height: 20px;
+    max-width: 30px;
+    max-height: 30px;
+    margin: 5px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../../assets/images/star-svgrepo-com2.svg);
+}
+
+.fork-icon {
+    min-width: 22px;
+    min-height: 22px;
+    max-width: 30px;
+    max-height: 35px;
+    margin: 5px;
+    top: 5px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../../assets/images/git-fork-svgrepo-com.svg)
+}
+
+.languages,
+.stars {
+    width: 150px;
+    height: 100px;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap-reverse;
+    justify-content: flex-start;
+}
+
+.slides {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
 }
 
-
-
-.details-container-git{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-.git-icon-contain,.full-name-contain{
+.git-icon-contain,
+.full-name-contain {
     min-height: 100px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-items: flex-start;
     align-self: flex-start;
-    
-    align-items:flex-start;
+    align-items: flex-start;
 }
 
-.full-name-contain{
+.full-name-contain {
     width: 80%;
-
 }
 
-
-
-.language-1,
-.language-2,
-.language-3,
-.language-4 {
+.java,
+.html,
+.shell,
+.vue,
+.typescript,
+.css,
+.javascript,
+.dockerfile {
     min-height: 30px;
     min-width: 30px;
     max-width: 40px;
@@ -389,30 +749,58 @@
     border-radius: 20px;
     background-repeat: no-repeat;
     background-size: contain;
-
+}
 }
 
-.language-1 {
+
+
+
+.java {
     background-image: url(../../assets/images/java-icon.svg);
 }
 
-.language-2 {
+.html {
     background-image: url(../../assets/images/html-5-icon.svg);
 }
 
-.language-3 {
-    background-image: url(../../assets/images/docker-icon.svg);
-}
-
-.language-4 {
+.typescript {
     background-image: url(../../assets/images/typescript-icon.svg);
 }
 
+.css {
+    background-image: url(../../assets/images/css3-svgrepo-com.svg);
+}
 
+.javascript {
+    background-image: url(../../assets/images/javascript-icon.svg);
+}
 
+.dockerfile {
+    background-image: url(../../assets/images/docker-icon.svg);
+}
 
+.shell {
+    background-image: url(../../assets/images/shell-svgrepo-com.svg);
+}
+
+.vue {
+    background-image: url(../../assets/images/vue-svgrepo-com.svg);
+}
 
 .details-container-git {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+}
+
+.slides.dragging {
+    scroll-behavior: auto;
+}
+
+.slides.dragging .scroll-item {
+    pointer-events: none;
+}
+
+.project-slide i {
+    position: absolute;
 }

@@ -1,3 +1,4 @@
+import React  from 'react';
 import "./Experience.css"
 
 export function Experience() {
@@ -7,7 +8,6 @@ export function Experience() {
     const observer2 = new IntersectionObserver(entries => {
       entries.forEach(entry => {
         const title = entry.target.querySelector('.scaleDown');
-        console.log(entry.isIntersecting);
         if (entry.isIntersecting) {
           title.classList.add('scaleDownHel');
           title.classList.add('animate__delay-3s');

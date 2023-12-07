@@ -8,7 +8,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content:center;
-    align-items: start;
+    align-items: flex-start;
 }
 
 hr {
@@ -32,7 +32,7 @@ hr {
     display: flex;
     justify-content: left;
     flex-direction: column;
-    align-items:start;
+    align-items:flex-start;
 
 }
 
@@ -42,7 +42,7 @@ hr {
     display: flex;
     flex-direction: row;
     justify-content:left;
-    align-items:start;
+    align-items:flex-start;
 
 }
 

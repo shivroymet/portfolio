@@ -1,3 +1,4 @@
+import React  from 'react';
 import { Skill } from "../../components/skill/Skill";
 import "./Skills.css"
 export function Skills() {
