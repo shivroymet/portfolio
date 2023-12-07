@@ -24,7 +24,7 @@ export function Projects() {
                 const projectDetails = await Promise.all(data.map(async (element) => {
                     const languagesResponse = await fetch(element.languages_url,requestOptions);
                     const languagesData = await languagesResponse.json();
-                    const forksResponse = await fetch(element.forks_url);
+                    const forksResponse = await fetch(element.forks_url,requestOptions);
                     const forksData = await forksResponse.json();
 
                     return {
