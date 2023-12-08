@@ -2,22 +2,6 @@ import React  from 'react';
 import "./Experience.css"
 
 export function Experience() {
-  document.addEventListener("DOMContentLoaded", function () {
-
-
-    const observer2 = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        const title = entry.target.querySelector('.scaleDown');
-        if (entry.isIntersecting) {
-          title.classList.add('scaleDownHel');
-          title.classList.add('animate__delay-3s');
-          return;
-        }
-      });
-    });
-    observer2.observe(document.querySelector('.containerhel'));
-
-  });
   return <article>
     <figure className="infosys-fig">
 
@@ -57,7 +41,6 @@ export function Experience() {
           <div className="icon-box img11"></div>
           <div className="icon-box img12"></div>
           <div className="icon-box img28"></div>
-          
         </div>
 
 

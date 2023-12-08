@@ -4,6 +4,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Available Scripts
 
+### `npm install --force`
+
 ### `npm install styled-components`
 ### `npm i bootstrap@5.3.2`
 
