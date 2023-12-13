@@ -16,8 +16,8 @@ function Navbar() {
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
-            <li className={useMatch({ path: useResolvedPath("/").pathname, end:true}) ? 'active':''}>
-              <Link className="nav-link" to="/">Home</Link>
+            <li className={useMatch({ path: useResolvedPath("/home").pathname, end:true}) ? 'active':''}>
+              <Link className="nav-link" to="/home">Home</Link>
             </li>
             <li className={useMatch({ path: useResolvedPath("/contact").pathname, end:true}) ? 'active':''}>
               <Link className="nav-link" to="/contact">Contact</Link>
